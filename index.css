@@ -1,0 +1,326 @@
+:root {
+  --bg: #000000;
+  --text: #ffffff;
+  --accent: #1b2cc1;
+  --border-thickness: 0.5px;
+  --nav-bg: #000;
+  --footer-bg: #111;
+  --border-color: #ffffff;
+}
+
+[data-theme="light"] {
+  --bg: #ffffff;
+  --text: #111111;
+  --nav-bg: #f5f5f5;
+  --footer-bg: #e5e5e5;
+  --border-color: #333;
+}
+
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'League Spartan', 'Roboto Condensed', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s, color 0.3s;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+.header {
+  background-color: var(--nav-bg);
+  border-bottom: var(--border-thickness) solid var(--border-color);
+  position: relative;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Logo Bar */
+.logo-bar {
+  padding: 1rem 0;
+  cursor: pointer;
+}
+
+.logo-bar h1 {
+  font-family: 'League Spartan', sans-serif;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
+  color: var(--text);
+  transition: color 0.3s;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* Navigation */
+.main-nav {
+  flex-grow: 1;
+}
+
+.main-nav-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: clamp(1rem, 2vw, 2rem);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav a {
+  color: var(--text);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  font-size: clamp(0.75rem, 1.25vw, 0.875rem);
+  letter-spacing: 1px;
+  padding: 1.5rem 0;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.main-nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 1rem;
+  left: 0;
+  background-color: var(--accent);
+  transition: width 0.3s;
+}
+
+.main-nav a:hover {
+  color: var(--accent);
+}
+
+.main-nav a:hover::after {
+  width: 100%;
+}
+
+.main-nav .active {
+  color: var(--accent);
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--nav-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  transition: all 0.3s;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  background-color: var(--bg);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+}
+
+.hero .content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.hero .content h1 {
+  font-family: 'League Spartan', sans-serif;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.hero .par {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+/* Best Sellers Section */
+.best-sellers {
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.best-sellers h1 {
+  margin-bottom: 2rem;
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.products-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.product-image {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s;
+  border-radius: 8px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+}
+
+.product-image:hover {
+  transform: scale(1.05);
+}
+
+/* About Section */
+.content-section {
+  padding: 4rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content-section h2 {
+  font-size: clamp(1.75rem, 5vw, 2.25rem);
+  margin-bottom: 1.5rem;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.content-section p {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: var(--footer-bg);
+  color: var(--text);
+  text-align: center;
+  padding: 3rem 1rem;
+  border-top: var(--border-thickness) solid var(--border-color);
+}
+
+footer h2 {
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  margin-bottom: 1rem;
+}
+
+
+.icon a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+.icon ion-icon{
+color:rgb(146, 0, 0);
+font-size: 30px;
+padding-left: 14px;
+padding-top:5px;
+transition:0.3rem;
+}
+
+.icon ion-icon:hover{
+color:#1b2cc1;
+}
+
+.copyright {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  opacity: 0.7;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+  }
+
+  .logo-bar {
+    padding: 0.5rem 0;
+  }
+
+  .main-nav {
+    width: 100%;
+  }
+
+  .main-nav-container {
+    justify-content: center;
+  }
+
+  .main-nav a {
+    padding: 1rem 0;
+  }
+
+  .hero {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .theme-toggle {
+    width: 35px;
+    height: 35px;
+  }
+
+  .main-nav ul {
+    gap: 0.75rem;
+  }
+
+  .product-image {
+    max-width: 220px;
+  }
+}

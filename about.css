@@ -1,0 +1,95 @@
+/* About Page Specific Styles */
+.about-section {
+  padding: 4rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-container {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+  font-family: 'League Spartan', sans-serif;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--accent);
+  margin: 2rem 0 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.about-section p {
+  font-family: 'Roboto Condensed', sans-serif;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.about-divider {
+  height: 1px;
+  background-color: var(--border-color);
+  margin: 2rem auto;
+  opacity: 0.2;
+  width: 80%;
+}
+
+/* Footer Improvements */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.contact-info a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  margin: 1.5rem 0;
+}
+
+.social-icons a {
+  color: var(--text);
+  margin: 0 0.5rem;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: var(--accent);
+}
+
+/* Light Theme Adjustments */
+[data-theme="light"] .about-container {
+  background-color: rgba(245, 245, 245, 0.7);
+}
+
+[data-theme="light"] .about-divider {
+  background-color: var(--text);
+}
+
+
+.icon a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+.icon ion-icon{
+color:rgb(146, 0, 0);
+font-size: 30px;
+padding-left: 14px;
+padding-top:5px;
+transition:0.3rem;
+}
+
+.icon ion-icon:hover{
+color:#1b2cc1;
+}
