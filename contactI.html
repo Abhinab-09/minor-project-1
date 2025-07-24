@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="TECHMANIA." />
-  <title>TECHMANIA</title>
+  <meta name="description" content="TECHMANIA - Contact Us" />
+  <title>TECHMANIA - Contact</title>
   <link rel="stylesheet" href="contactI.css" />
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </head>
 
 <body>
@@ -13,23 +14,24 @@
     <button class="theme-toggle" aria-label="Toggle theme">🌓</button>
     
     <div class="header-container">
-      <div class="logo-bar" onclick="window.location.href='#'">
-      <a href="index.html"><h1>TECHMANIA</h1></a>
+      <div class="logo-bar">
+        <a href="index.html"><h1>TECHMANIA</h1></a>
       </div>
 
       <nav class="main-nav">
         <div class="main-nav-container">
           <ul>
-            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="shop.html">Shop</a></li>
             <li><a href="login.html">Login</a></li>
-            <li><a href="contactI.html">Contact</a></li>
+            <li><a href="contactI.html" class="active">Contact</a></li>
           </ul>
         </div>
       </nav>
     </div>
   </header>
+
   <section class="contact-section">
     <h1>CONTACT US</h1>
     <div class="contact-container">
@@ -50,7 +52,7 @@
           
           <div class="contact-item">
             <h3>Address</h3>
-            <p>Techmania Headquarters<br>Kathmandu, Nepal</p>
+            <p>Mid-Baneshwor, Kathmandu</p>
           </div>
         </div>
         
@@ -59,8 +61,19 @@
           <p>Sunday - Friday: 10:00 AM - 6:00 PM</p>
           <p>Saturday: Closed</p>
         </div>
+        
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5793.470933551911!2d85.33895219177612!3d27.695716820368247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb199940d81663%3A0xaf36b9b58903050f!2sApex%20College%20by%20ING!5e0!3m2!1sen!2snp!4v1753363360587!5m2!1sen!2snp" 
+                  width="100%" 
+                  height="300" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
       </div>
-      
+
       <div class="contact-form">
         <h2>Send Us a Message</h2>
         <form action="#" method="POST">
@@ -91,24 +104,33 @@
   </section>
 
   <footer>
-    <div>
+    <div class="footer-content">
       <h2>TECHMANIA</h2>
       <p>Premier technology</p>
       <p>
-        Email: <a href="mailto:techmania12@gmail.com" style="color: var(--accent);">techmania12@gmail.com</a> |
+        Email: <a href="mailto:techmania12@gmail.com">techmania12@gmail.com</a> |
         Phone: +977-9817957403
-        <div class="icon">
-        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
-        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
-    </div>
-  </div>
- <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
       </p>
+      <div class="icon">
+        <a href="#" aria-label="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#" aria-label="Twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="#" aria-label="Google"><ion-icon name="logo-google"></ion-icon></a>
+      </div>
       <p class="copyright">&copy; 2025 Techmania. All rights reserved.</p>
     </div>
+
+    <div class="app-download-section">
+  <p>GET IT ON</p>
+  <div class="download-buttons">
+    <a href="YOUR_GOOGLE_PLAY_LINK" target="_blank" class="download-button google-play">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play">
+    </a>
+    <a href="YOUR_APP_STORE_LINK" target="_blank" class="download-button app-store">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="Download on the App Store">
+    </a>
+  </div>
+</div>
   </footer>
 
   <script src="contact.js"></script>
