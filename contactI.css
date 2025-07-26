@@ -16,7 +16,7 @@
   --border-color: #333;
 }
 
-/* Base Styles */
+
 body {
   margin: 0;
   font-family: 'League Spartan', 'Roboto Condensed', sans-serif;
@@ -26,7 +26,7 @@ body {
   line-height: 1.6;
 }
 
-/* Header Styles */
+
 .header {
   background-color: var(--nav-bg);
   border-bottom: var(--border-thickness) solid var(--border-color);
@@ -42,7 +42,7 @@ body {
   padding: 0 1rem;
 }
 
-/* Logo Bar */
+
 .logo-bar {
   padding: 1rem 0;
   cursor: pointer;
@@ -60,7 +60,7 @@ body {
   white-space: nowrap;
 }
 
-/* Navigation */
+
 .main-nav {
   flex-grow: 1;
 }
@@ -155,7 +155,7 @@ body {
   letter-spacing: 2px;
 }
 
-/* Container Layout */
+
 .contact-container {
   display: flex;
   flex-wrap: wrap;
@@ -163,7 +163,7 @@ body {
   justify-content: space-between;
 }
 
-/* Contact Info Section */
+
 .contact-info {
   flex: 1 1 300px;
 }
@@ -205,7 +205,7 @@ body {
   color: var(--accent);
 }
 
-/* Business Hours */
+
 .business-hours h3 {
   font-family: 'League Spartan', sans-serif;
   font-size: 1rem;
@@ -220,7 +220,7 @@ body {
   margin-bottom: 0.25rem;
 }
 
-/* Contact Form Section */
+
 .contact-form {
   flex: 1 1 300px;
   background-color: var(--nav-bg);
@@ -261,7 +261,7 @@ body {
   background-color: rgba(255,255,255,0.05);
 }
 
-/* Submit Button */
+
 .submit-btn {
   width: 100%;
   padding: 0.85rem;
@@ -280,7 +280,7 @@ body {
   background-color: #1420a1;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .contact-container {
     flex-direction: column;
@@ -288,7 +288,7 @@ body {
   }
 }
 
-/* Footer */
+
 footer {
   background-color: var(--footer-bg);
   color: var(--text);
@@ -373,7 +373,7 @@ color:#1b2cc1;
   width: auto;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 600px) {
   .download-buttons {
     flex-direction: column;
@@ -385,7 +385,7 @@ color:#1b2cc1;
     height: 50px;
   }
 }
-/* Responsive Adjustments */
+
 @media (max-width: 768px) {
   .header-container {
     flex-direction: column;
@@ -428,7 +428,7 @@ color:#1b2cc1;
   }
 }
 
-/* Map Styles */
+
 .map {
     width: 100%;
     height: 300px;
@@ -445,7 +445,7 @@ color:#1b2cc1;
     border: none;
 }
 
-/* Responsive adjustments for map */
+
 @media (max-width: 768px) {
     .map {
         height: 250px;

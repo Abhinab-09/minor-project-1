@@ -21,7 +21,7 @@
   --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Base Styles */
+
 body {
   margin: 0;
   font-family: 'League Spartan', 'Roboto Condensed', sans-serif;
@@ -31,10 +31,7 @@ body {
   line-height: 1.6;
 }
 
-/* Header & Navigation */
 
-
-/* Theme Toggle */
 .theme-toggle {
   position: fixed;
   top: 20px;
@@ -59,7 +56,7 @@ body {
   color: white;
 }
 
-/* Shop Section */
+
 .shop-section {
   padding: 4rem 2rem;
   max-width: 1400px;
@@ -88,7 +85,7 @@ body {
   background-color: var(--accent);
 }
 
-/* Product Grid */
+
 .products-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -96,7 +93,7 @@ body {
   padding: 0 1rem;
 }
 
-/* Product Card */
+
 .product-card {
   background-color: var(--form-bg);
   border-radius: 10px;
@@ -189,27 +186,8 @@ body {
   transform: translateY(-2px);
 }
 
-.cart-btn {
-  background-color: transparent;
-  color: var(--accent);
-  border: 2px solid var(--accent);
-  padding: 0.8rem 1.5rem;
-  font-size: 0.95rem;
-  border-radius: 6px;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
-  flex: 1;
-}
 
-.cart-btn:hover {
-  background-color: rgba(27, 44, 193, 0.1);
-  transform: translateY(-2px);
-}
 
-/* Footer */
 footer {
   background-color: var(--footer-bg);
   color: var(--text);
@@ -310,7 +288,7 @@ color:#1b2cc1;
   width: auto;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 600px) {
   .download-buttons {
     flex-direction: column;
@@ -322,7 +300,7 @@ color:#1b2cc1;
     height: 50px;
   }
 }
-/* Responsive Design */
+
 @media (max-width: 1024px) {
   .products-grid {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

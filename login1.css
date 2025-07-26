@@ -16,7 +16,7 @@
   --border-color: #333;
 }
 
-/* Base Styles */
+
 body {
   margin: 0;
   font-family: 'League Spartan', 'Roboto Condensed', sans-serif;
@@ -26,7 +26,7 @@ body {
   line-height: 1.6;
 }
 
-/* Header Styles */
+
 .header {
   background-color: var(--nav-bg);
   border-bottom: var(--border-thickness) solid var(--border-color);
@@ -42,7 +42,6 @@ body {
   padding: 0 1rem;
 }
 
-/* Logo Bar */
 .logo-bar {
   padding: 1rem 0;
   cursor: pointer;
@@ -60,7 +59,7 @@ body {
   white-space: nowrap;
 }
 
-/* Navigation */
+
 .main-nav {
   flex-grow: 1;
 }
@@ -114,7 +113,6 @@ body {
   color: var(--accent);
 }
 
-/* Theme Toggle */
 .theme-toggle {
   position: fixed;
   top: 20px;
@@ -137,7 +135,7 @@ body {
   transform: scale(1.1);
 }
 
-/* Form Container */
+
 .form {
   max-width: 400px;
   margin: 5rem auto;
@@ -152,7 +150,7 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Heading */
+
 .form h2 {
   font-family: 'League Spartan', sans-serif;
   font-size: clamp(1.5rem, 4vw, 2rem);
@@ -162,7 +160,7 @@ body {
   color: var(--text);
 }
 
-/* Inputs */
+
 .form input {
   width: 100%;
   padding: 0.75rem;
@@ -182,7 +180,7 @@ body {
   background-color: rgba(255, 255, 255, 0.05);
 }
 
-/* Buttons */
+
 .form .btn {
   width: 100%;
   padding: 0.75rem;
@@ -203,7 +201,7 @@ body {
   background-color: #1420a1;
 }
 
-/* Links */
+
 .form .link {
   margin-top: 1rem;
   font-size: 0.9rem;
@@ -219,7 +217,6 @@ body {
   text-decoration: underline;
 }
 
-/* Login With Text */
 .form .liw {
   margin: 1.5rem 0 0.5rem;
   font-size: 0.9rem;
@@ -269,7 +266,7 @@ body {
   width: auto;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 600px) {
   .download-buttons {
     flex-direction: column;
@@ -282,7 +279,6 @@ body {
   }
 }
 
-/* Footer */
 footer {
   background-color: var(--footer-bg);
   color: var(--text);
@@ -325,7 +321,6 @@ color:#1b2cc1;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
   .header-container {
     flex-direction: column;
