@@ -1,19 +1,26 @@
 
-document.addEventListener('DOMContentLoaded', function() {
-  
+const themeToggle = document.querySelector('.theme-toggle');
+const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+const currentTheme = localStorage.getItem('theme');
 
-  const themeToggle = document.querySelector('.theme-toggle');
-  const currentTheme = localStorage.getItem('theme') || 'dark';
-  
-  document.documentElement.setAttribute('data-theme', currentTheme);
-  
-  themeToggle.addEventListener('click', function() {
-    const currentTheme = document.documentElement.getAttribute('data-theme');
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    
-    document.documentElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem('theme', newTheme);
-  });
+if (currentTheme === 'light' || (!currentTheme && !prefersDarkScheme.matches)) {
+  document.body.setAttribute('data-theme', 'light');
+  themeToggle.textContent = '🌙';
+} else {
+  themeToggle.textContent = '☀️';
+}
+
+themeToggle.addEventListener('click', () => {
+  const currentTheme = document.body.getAttribute('data-theme');
+  if (currentTheme === 'light') {
+    document.body.removeAttribute('data-theme');
+    localStorage.setItem('theme', 'dark');
+    themeToggle.textContent = '☀️';
+  } else {
+    document.body.setAttribute('data-theme', 'light');
+    localStorage.setItem('theme', 'light');
+    themeToggle.textContent = '🌙';
+  }
   
 
   const contactForm = document.querySelector('.contact-form form');
